@@ -2,9 +2,9 @@ name: Convert Markdown to PDF
 
 on:
   push:
-    paths:
-      # - "docs/**/*.md"
-      - "*"
+    branches: main
+    # paths:
+    #   - "docs/**/*.md"
 
 jobs:
   convert:
