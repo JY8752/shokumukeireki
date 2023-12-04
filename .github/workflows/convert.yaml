@@ -13,6 +13,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: install japanese font
+        run: sudo apt install fonts-ipafont fonts-ipaexfont
+
       - name: Convert Markdown to PDF
         run: ls ./docs/*.md | xargs -n 1 npx md-to-pdf
 
