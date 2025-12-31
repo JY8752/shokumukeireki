@@ -3,7 +3,8 @@ name: Convert Markdown to PDF
 on:
   push:
     paths:
-      - "docs/**/*.md"
+      - "README.md"
+      - ".github/workflows/convert.yaml"
 
 jobs:
   convert:
@@ -16,7 +17,7 @@ jobs:
         run: sudo apt install fonts-ipafont fonts-ipaexfont
 
       - name: Convert Markdown to PDF
-        run: ls ./docs/*.md | xargs -n 1 npx md-to-pdf
+        run: cat README.md | npx md-to-pdf > ./docs/shokumu_yamanaka.pdf
 
       - name: Commit PDF files
         run: |
