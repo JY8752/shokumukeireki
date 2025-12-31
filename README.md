@@ -1,7 +1,7 @@
 # 職務経歴書
 
-- [PDF](./syokumu_yamanaka.pdf)
-- [HTML](https://jy8752.github.io/shokumukeireki/docs/syokumu_yamanaka)
+- [PDF](./docs/shokumu_yamanaka.pdf)
+- [HTML](https://jy8752.github.io/shokumukeireki/docs/shokumu_yamanaka)
 
 ## 株式会社ジュピターテレコム(2013/4 - 2020/4)
 
