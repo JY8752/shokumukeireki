@@ -17,6 +17,8 @@ jobs:
         run: sudo apt install fonts-ipafont fonts-ipaexfont
 
       - name: Convert Markdown to PDF
+        env:
+          PUPPETEER_ARGS: --no-sandbox --disable-setuid-sandbox
         run: cat README.md | npx md-to-pdf > ./docs/shokumu_yamanaka.pdf
 
       - name: Commit PDF files
